@@ -32,4 +32,7 @@ func main() {
 	age := model.CalculateAge(Person)
 	fmt.Println(age)
 
+	Person.MethodPersonCalculate()
+	fmt.Println(age)
+
 }
