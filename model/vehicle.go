@@ -3,14 +3,14 @@ package model
 type Vehicle struct {
 	Year  int
 	Plate string
-	model string
+	Model string
 }
 
 type Car struct {
 	Vehicle
 	Power              int
 	Ports              int
-	hasAirConditioning bool
+	HasAirConditioning bool
 }
 
 type MotorCycle struct {

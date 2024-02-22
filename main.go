@@ -35,4 +35,17 @@ func main() {
 	Person.MethodPersonCalculate()
 	fmt.Println(age)
 
+	vehicle := model.Vehicle{
+		Year:  2022,
+		Plate: "AAA-2323",
+		Model: "Yamaha",
+	}
+
+	motorCycle := model.MotorCycle{
+		Vehicle:          vehicle,
+		CylinderCapacity: 1000,
+	}
+
+	fmt.Println(motorCycle)
+
 }
