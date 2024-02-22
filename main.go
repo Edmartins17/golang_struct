@@ -20,4 +20,10 @@ func main() {
 	address.Number = 10
 	fmt.Println("Number changing:", address.Number)
 
+	Person := model.Person{
+		Name:    "Ed",
+		Address: address,
+	}
+
+	fmt.Println(Person)
 }
