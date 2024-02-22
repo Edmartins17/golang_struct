@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/Edmartins17/golang_struct/model"
 )
@@ -21,9 +22,14 @@ func main() {
 	fmt.Println("Number changing:", address.Number)
 
 	Person := model.Person{
-		Name:    "Ed",
-		Address: address,
+		Name:     "Ed",
+		Address:  address,
+		BirthDay: time.Date(1977, 06, 17, 0, 0, 0, 0, time.Local),
 	}
 
 	fmt.Println(Person)
+
+	age := model.CalculateAge(Person)
+	fmt.Println(age)
+
 }
