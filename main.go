@@ -17,4 +17,7 @@ func main() {
 
 	fmt.Println("Address:", address)
 
+	address.Number = 10
+	fmt.Println("Number changing:", address.Number)
+
 }
