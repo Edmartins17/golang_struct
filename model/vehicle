@@ -1,0 +1,19 @@
+package model
+
+type Vehicle struct {
+	Year  int
+	Plate string
+	model string
+}
+
+type Car struct {
+	Vehicle
+	Power              int
+	Ports              int
+	hasAirConditioning bool
+}
+
+type MotorCycle struct {
+	Vehicle
+	CylinderCapacity int
+}
