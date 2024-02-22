@@ -1,20 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-type address struct {
-	street string
-	number int
-	city   string
-}
+	"github.com/Edmartins17/golang_struct/model"
+)
 
 func main() {
 	fmt.Println("Starting...")
 
-	address := address{
-		street: "A Street",
-		number: 729,
-		city:   "Vancouver",
+	address := model.Address{
+		Street: "A Street",
+		Number: 729,
+		City:   "Vancouver",
 	}
 
 	fmt.Println("Address:", address)
